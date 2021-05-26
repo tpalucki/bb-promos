@@ -26,8 +26,7 @@ class HomeControllerTest {
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).contains(List.of(
-                "Set A", "01.04.2021", "1234", "This is some piece of description",
-                "Set B", "01.04.2021", "72863", "Lorem ipsum et dolores summit"
-        ));
+                "LEGO Disney 10775 - Farma Mikiego i Donalda", "2021", "118", "127.99", "PLN",
+                "LEGO Marvel Superheroes 76193 - Statek strażników", "2021", "1901", "569.99", "PLN"));
     }
 }
