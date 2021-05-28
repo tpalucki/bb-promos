@@ -1,11 +1,11 @@
+{{#sets}}
 <div>
-    {{#sets}}
-    <h1>{{title}}</h1>
-    <h3>{{releaseYear}}</h3>
-    <h3>{{piecesAmount}}</h3>
+    <h1 class="mt-5">{{title}}</h1>
+    <p>{{releaseYear}}</p>
+    <p>{{piecesAmount}}</p>
     <p>{{price}} {{currency}}</p>
     <a href="/images/lego-{{number}}.jpg">
         <img src="/images/lego-{{number}}.s.jpg" alt="{{title}}" title="{{title}}">
     </a>
-    {{/sets}}
 </div>
+{{/sets}}
