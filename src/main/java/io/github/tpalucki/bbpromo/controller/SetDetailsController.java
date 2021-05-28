@@ -16,7 +16,7 @@ import java.util.Map;
 public class SetDetailsController {
 
     @GetMapping("/products/{productNumber}")
-        public ModelAndView displayProductDetails(@PathVariable String productNumber, Map<String, Object> model) {
+    public ModelAndView displayProductDetails(@PathVariable String productNumber, Map<String, Object> model) {
         log.info("Show details of product " + productNumber);
 
         model.put("pageTitle", "BB Promos");

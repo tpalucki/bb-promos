@@ -1,22 +1,16 @@
 <div>
     {{#productDetails}}
     <h1>{{title}}</h1>
-    <img src="lego-{{catalogueNumber}}.s.jpg" alt="{{title}}" title="{{title}}">
-    <h3>{{catalogueTitle}}</h3>
-    <h3>{{piecesAmount}}</h3>
-    <p>{{price}} {{currency}}</p>
-
-    <p>{{title}}</p>
-    <p>{{catalogueTitle}}</p>
-    <p>{{catalogueNumber}}</p>
-    <p>{{seriesName}}</p>
-    <p>{{piecesAmount}}</p>
-    <p>{{releaseYear}}</p>
-    <p>{{cataloguePrice}}</p>
-    <p>{{lowestPrice}}</p>
-    <p>{{lowestPriceDetails}}</p>
-    <p>{{currency}}</p>
-    <p>{{recommendedAge}}</p>
-
+    <a href="/lego-{{catalogueNumber}}.jpg">
+        <img src="/lego-{{catalogueNumber}}.s.jpg" alt="{{title}}" title="{{title}}">
+    </a>
+    <p>Tytuł oryginalny: {{catalogueTitle}}</p>
+    <p>Numer katalogowy: {{catalogueNumber}}</p>
+    <p>Liczba elementów: {{piecesAmount}}</p>
+    <p>Seria: {{seriesName}}</p>
+    <p>Rok wydania: {{releaseYear}}</p>
+    <p>Cena oryginalna: {{cataloguePrice}} {{currency}}</p>
+    <p>Najniższa cena: {{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</p>
+    <p>Wiek: {{recommendedAge}}+</p>
     {{/productDetails}}
 </div>
