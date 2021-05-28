@@ -11,11 +11,10 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class HomeControllerTest {
+class ProductDetailsControllerTest {
 
-    private static final String API_URL = "/";
+    private static final String API_URL = "/products/1";
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -27,8 +26,18 @@ class HomeControllerTest {
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).contains(List.of(
                 "favicon.ico",
-                "LEGO Disney 10775 - Farma Mikiego i Donalda", "2021", "118", "127.99", "PLN",
-                "LEGO Marvel Superheroes 76193 - Statek strażników", "2021", "1901", "569.99", "PLN"
+                "LEGO® 10775 Disney - Farma Mikiego i Donalda",
+                "Tytuł oryginalny:", "Mickey Mouse & Donald Duck's Farm",
+                "Numer katalogowy:", "10775",
+                "Seria:", "LEGO Disney",
+                "Liczba elementów:", "118",
+                "Rok wydania:", "2021",
+                "Cena oryginalna:", "139.99",
+                "127.99",
+                "(Allegro, 26.05.2021)",
+                "PLN",
+                "4"
+
         ));
     }
 }

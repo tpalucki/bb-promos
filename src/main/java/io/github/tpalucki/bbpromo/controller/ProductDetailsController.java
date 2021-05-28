@@ -13,7 +13,7 @@ import java.util.Map;
 
 @Log
 @Controller
-public class SetDetailsController {
+public class ProductDetailsController {
 
     @GetMapping("/products/{productNumber}")
     public ModelAndView displayProductDetails(@PathVariable String productNumber, Map<String, Object> model) {
