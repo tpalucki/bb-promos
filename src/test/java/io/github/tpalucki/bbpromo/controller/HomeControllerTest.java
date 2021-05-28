@@ -14,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class HomeControllerTest {
 
     private static final String API_URL = "/";
+    private static final String API_URL_WITH_QUERY = "/?query=42095";
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -21,6 +22,18 @@ class HomeControllerTest {
     @Test
     void shouldShowIndexPage() {
         final ResponseEntity<String> responseEntity = restTemplate.getForEntity(API_URL, String.class);
+
+        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(responseEntity.getBody()).contains(
+                "favicon.ico",
+                "LEGO Disney 10775 - Farma Mikiego i Donalda", "2021", "118", "127.99", "PLN",
+                "LEGO Marvel Superheroes 76193 - Statek strażników", "2021", "1901", "569.99", "PLN"
+        );
+    }
+
+    @Test
+    void shouldShowIndexPageWithQuery() {
+        final ResponseEntity<String> responseEntity = restTemplate.getForEntity(API_URL_WITH_QUERY, String.class);
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).contains(
