@@ -18,9 +18,12 @@ import java.util.Optional;
 public class HomeController {
 
     @GetMapping("/")
-    public ModelAndView displayHomePageWithSearch(Map<String, Object> model, @RequestParam(required = false) String query) {
+    public ModelAndView displayHomePageWithSearch(Map<String, Object> model,
+                                                  @RequestParam(required = false) String query,
+                                                  @RequestParam(required = false) Integer page) {
         log.info("Display home page");
         Optional.ofNullable(query).ifPresent(value -> log.info("Query: " + value));
+        Optional.ofNullable(page).ifPresent(value -> log.info("Page: " + value));
 
         model.put("pageTitle", "BB Promos");
         model.put("sets", provideSetsInfo());

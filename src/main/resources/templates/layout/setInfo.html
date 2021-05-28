@@ -1,11 +1,16 @@
 {{#sets}}
-<div>
-    <h1 class="mt-5">{{title}}</h1>
-    <p>{{releaseYear}}</p>
-    <p>{{piecesAmount}}</p>
-    <p>{{price}} {{currency}}</p>
-    <a href="/images/lego-{{number}}.jpg">
-        <img src="/images/lego-{{number}}.s.jpg" alt="{{title}}" title="{{title}}">
-    </a>
+<div class="row mt-4">
+    <div class="col-2">
+        <a href="/images/lego-{{number}}.jpg">
+            <img src="/images/lego-{{number}}.s.jpg" alt="{{title}}" title="{{title}}">
+        </a>
+    </div>
+    <div class="col-8">
+        <p class="lead">{{title}}</p>
+        <span class="small">Rok wydania: {{releaseYear}}, liczba elementów: {{piecesAmount}}</span>
+    </div>
+    <div class="col-2">
+        <button type="button" class="btn btn-success">{{price}} {{currency}}</button>
+    </div>
 </div>
 {{/sets}}
