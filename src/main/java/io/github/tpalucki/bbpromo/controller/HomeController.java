@@ -4,20 +4,23 @@ import io.github.tpalucki.bbpromo.model.SetInfo;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Log
 @Controller
 public class HomeController {
 
     @GetMapping("/")
-    public ModelAndView displayHomePage(Map<String, Object> model) {
+    public ModelAndView displayHomePageWithSearch(Map<String, Object> model, @RequestParam(required = false) String query) {
         log.info("Display home page");
+        Optional.ofNullable(query).ifPresent(value -> log.info("Query: " + value));
 
         model.put("pageTitle", "BB Promos");
         model.put("sets", provideSetsInfo());

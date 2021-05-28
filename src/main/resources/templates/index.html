@@ -17,6 +17,13 @@
 
 <body>
 
+<header>
+    <form method="get" action="/">
+        <input type="text" name="query" placeholder="Numer lub tytuł zestawu">
+        <button type="submit">Szukaj</button>
+    </form>
+</header>
+
 <h1>{{pageTitle}}</h1>
 <div class="container">
     {{>layout/setInfo}}
@@ -29,6 +36,6 @@
 </body>
 
 <footer>
-   {{>layout/footer}}
+    {{>layout/footer}}
 </footer>
 </html>
