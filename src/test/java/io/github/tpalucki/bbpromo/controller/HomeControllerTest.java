@@ -7,8 +7,6 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import java.util.List;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 
@@ -25,10 +23,10 @@ class HomeControllerTest {
         final ResponseEntity<String> responseEntity = restTemplate.getForEntity(API_URL, String.class);
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(responseEntity.getBody()).contains(List.of(
+        assertThat(responseEntity.getBody()).contains(
                 "favicon.ico",
                 "LEGO Disney 10775 - Farma Mikiego i Donalda", "2021", "118", "127.99", "PLN",
                 "LEGO Marvel Superheroes 76193 - Statek strażników", "2021", "1901", "569.99", "PLN"
-        ));
+        );
     }
 }
