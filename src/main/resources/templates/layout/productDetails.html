@@ -1,9 +1,20 @@
 <main class="flex-shrink-0">
     {{#productDetails}}
     <div class="container">
-        <div class="row">
+        <div class=row>
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Klocki Lego</a></li>
+                        <li class="breadcrumb-item"><a href="/?query={{catalogueNumber}}">{{seriesName}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Zestaw {{catalogueNumber}}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row my-3">
             <div class="col-12">
-                <p class="lead">{{title}}</p>
+                <h1 class="display-6">{{title}}</h1>
             </div>
         </div>
         <div class="row">
