@@ -1,16 +1,54 @@
-<div>
+<main class="flex-shrink-0">
     {{#productDetails}}
-    <h1>{{title}}</h1>
-    <a href="/images/lego-{{catalogueNumber}}.jpg">
-        <img src="/images/lego-{{catalogueNumber}}.s.jpg" alt="{{title}}" title="{{title}}">
-    </a>
-    <p>Tytuł oryginalny: {{{catalogueTitle}}}</p>
-    <p>Numer katalogowy: {{catalogueNumber}}</p>
-    <p>Liczba elementów: {{piecesAmount}}</p>
-    <p>Seria: {{seriesName}}</p>
-    <p>Rok wydania: {{releaseYear}}</p>
-    <p>Cena oryginalna: {{cataloguePrice}} {{currency}}</p>
-    <p>Najniższa cena: {{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</p>
-    <p>Wiek: {{recommendedAge}}+</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>{{title}}</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="/images/lego-{{catalogueNumber}}.jpg">
+                    <img src="/images/lego-{{catalogueNumber}}.s.jpg" alt="{{title}}" title="{{title}}">
+                </a>
+            </div>
+            <div class="col-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">Tytuł oryginalny</div>
+                        <div class="col">{{{catalogueTitle}}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Numer katalogowy</div>
+                        <div class="col">{{catalogueNumber}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Liczba elementów</div>
+                        <div class="col">{{piecesAmount}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Seria</div>
+                        <div class="col">{{seriesName}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Rok wydania</div>
+                        <div class="col">{{releaseYear}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Cena oryginalna</div>
+                        <div class="col">{{cataloguePrice}} {{currency}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Najniższa cena</div>
+                        <div class="col">{{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Wiek</div>
+                        <div class="col">{{recommendedAge}}+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     {{/productDetails}}
-</div>
+</main>

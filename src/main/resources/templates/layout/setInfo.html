@@ -1,16 +1,20 @@
-{{#sets}}
-<div class="row mt-4">
-    <div class="col-2">
-        <a href="/images/lego-{{number}}.jpg">
-            <img src="/images/lego-{{number}}.s.jpg" alt="{{title}}" title="{{title}}">
-        </a>
+<main class="flex-shrink-0">
+    <div class="container">
+        {{#sets}}
+        <div class="row mt-4">
+            <div class="col-2">
+                <a href="/images/lego-{{number}}.jpg">
+                    <img src="/images/lego-{{number}}.s.jpg" alt="{{title}}" title="{{title}}">
+                </a>
+            </div>
+            <div class="col-8">
+                <p class="lead">{{title}}</p>
+                <span class="small">Rok wydania: {{releaseYear}}, liczba elementów: {{piecesAmount}}</span>
+            </div>
+            <div class="col-2">
+                <a href="/products/{{number}}" class="btn btn-outline-success" role="button">{{price}} {{currency}}</a>
+            </div>
+        </div>
+        {{/sets}}
     </div>
-    <div class="col-8">
-        <p class="lead">{{title}}</p>
-        <span class="small">Rok wydania: {{releaseYear}}, liczba elementów: {{piecesAmount}}</span>
-    </div>
-    <div class="col-2">
-        <a href="/products/{{number}}" class="btn btn-outline-success" role="button">{{price}} {{currency}}</a>
-    </div>
-</div>
-{{/sets}}
+</main>

@@ -25,14 +25,14 @@ class ProductDetailsControllerTest {
         assertThat(responseEntity.getBody()).contains(
                 "favicon.ico",
                 "LEGO® 10775 Disney - Farma Mikiego i Donalda",
-                "Tytuł oryginalny:", "Mickey Mouse & Donald Duck's Farm",
-                "Numer katalogowy:", "10775",
-                "Seria:", "LEGO Disney",
-                "Liczba elementów:", "118",
-                "Rok wydania:", "2021",
-                "Cena oryginalna:", "139.99 PLN",
-                "Najniższa cena:", "127.99 PLN (Allegro, 26.05.2021)",
-                "Wiek:", "4+"
+                "Tytuł oryginalny", "Mickey Mouse & Donald Duck's Farm",
+                "Numer katalogowy", "10775",
+                "Seria", "LEGO Disney",
+                "Liczba elementów", "118",
+                "Rok wydania", "2021",
+                "Cena oryginalna", "139.99 PLN",
+                "Najniższa cena", "127.99 PLN (Allegro, 26.05.2021)",
+                "Wiek", "4+"
         );
     }
 }
