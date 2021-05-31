@@ -14,6 +14,7 @@ Building Blocks on Polish market.
 - show catalogues with sorting, eg per year, per series
 - show cheapest sets available
 - show sets per series/category/release year etc
+- add tags for each product (they would be displayed like badges)
 
 ## Tech stack
 
