@@ -15,6 +15,7 @@ Building Blocks on Polish market.
 - show cheapest sets available
 - show sets per series/category/release year etc
 - add tags for each product (they would be displayed like badges)
+- show set detailed specification (size, weight, dimension etc)
 
 ## Tech stack
 
