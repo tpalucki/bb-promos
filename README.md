@@ -11,6 +11,9 @@ Building Blocks on Polish market.
 - pricing history for every set
 - notifications when offer drops below some requested point
 - affiliate marketing network integration
+- show catalogues with sorting, eg per year, per series
+- show cheapest sets available
+- show sets per series/category/release year etc
 
 ## Tech stack
 
