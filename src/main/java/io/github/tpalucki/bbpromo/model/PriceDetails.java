@@ -14,6 +14,7 @@ public class PriceDetails {
     private BigDecimal price;
     private Currency currency;
     private boolean freeDelivery;
+    private String offerLink;
 
     @Value
     public static class AdditionalInfo {

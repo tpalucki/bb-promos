@@ -32,16 +32,20 @@ public class ProductDetailsController {
         return List.of(
                 new PriceDetails("Allegro", List.of(
                         new PriceDetails.AdditionalInfo("Darmowa dostawa z Allegro Smart! dla zamówień od 40zł")),
-                        BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true),
+                        BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true,
+                        "https://allegro.pl/kategoria/klocki-lego-17865?string=lego%2042095&bmatch=e2101-d3794-c3683-bab-1-1-0528&order=p"),
                 new PriceDetails("OLX", List.of(),
-                        BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false),
+                        BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false,
+                        "https://www.olx.pl/oferty/q-Lego-42095/?search%5Border%5D=filter_float_price%3Aasc"),
                 new PriceDetails("Smyk.com", List.of(
                         new PriceDetails.AdditionalInfo("Darmowy odbiór w salonach Smyk.")),
-                        BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false),
+                        BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false,
+                        "https://www.smyk.com/search?q=Lego%2042095"),
                 new PriceDetails("Bonito.pl", List.of(
                         new PriceDetails.AdditionalInfo("Darmowy odbiór w punktach odbioru bonito.pl"),
                         new PriceDetails.AdditionalInfo("Darmowa wysyłka od 100zł.")),
-                        BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true)
+                        BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true,
+                        "https://bonito.pl/?tytul=Lego+42095&autor=&isbn=&oprawa=&wydawnictwo=&search=Szukaj&kategoria=1")
         );
     }
 
