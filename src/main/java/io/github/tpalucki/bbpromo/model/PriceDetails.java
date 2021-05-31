@@ -10,8 +10,13 @@ import java.util.List;
 public class PriceDetails {
 
     private String shopName;
-    private List<String> additionalInfo;
+    private List<PriceDetails.AdditionalInfo> additionalInfo;
     private BigDecimal price;
     private Currency currency;
     private boolean freeDelivery;
+
+    @Value
+    public static class AdditionalInfo {
+        String info;
+    }
 }

@@ -30,13 +30,17 @@ public class ProductDetailsController {
 
     private List<PriceDetails> providePriceComparison() {
         return List.of(
-                new PriceDetails("Allegro", List.of("Darmowa dostawa z Allegro Smart! dla zamówień od 40zł"),
+                new PriceDetails("Allegro", List.of(
+                        new PriceDetails.AdditionalInfo("Darmowa dostawa z Allegro Smart! dla zamówień od 40zł")),
                         BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true),
                 new PriceDetails("OLX", List.of(),
                         BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false),
-                new PriceDetails("Smyk.com", List.of("Darmowy odbiór w salonach Smyk."),
+                new PriceDetails("Smyk.com", List.of(
+                        new PriceDetails.AdditionalInfo("Darmowy odbiór w salonach Smyk.")),
                         BigDecimal.valueOf(13999L, 2), Currency.getInstance("PLN"), false),
-                new PriceDetails("Bonito.pl", List.of("Darmowy odbiór w punktach odbioru bonito.pl", "Darmowa wysyłka od 100zł."),
+                new PriceDetails("Bonito.pl", List.of(
+                        new PriceDetails.AdditionalInfo("Darmowy odbiór w punktach odbioru bonito.pl"),
+                        new PriceDetails.AdditionalInfo("Darmowa wysyłka od 100zł.")),
                         BigDecimal.valueOf(12799L, 2), Currency.getInstance("PLN"), true)
         );
     }
