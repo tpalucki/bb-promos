@@ -14,41 +14,42 @@
         </div>
 
         <div class="row my-3 d-flex flex-column shadow">
-            <h1 class="display-6">{{title}}</h1>
+            <h1 class="fs-3 p-3">{{title}}</h1>
             <div class="d-flex">
                 <a href="/images/lego-{{catalogueNumber}}.jpg" class="w-50">
-                    <img src="/images/lego-{{catalogueNumber}}.jpg" alt="{{title}}" title="{{title}}" class="img-fluid">
+                    <img src="/images/lego-{{catalogueNumber}}.jpg" alt="{{title}}" title="{{title}}"
+                         class="img-fluid">
                 </a>
-                <div class="d-flex flex-column flex-grow-1">
-                    <div class="d-flex">
+                <div class="d-flex flex-column flex-grow-1 py-3">
+                    <div class="d-flex px-5">
                         <div class="w-50">Tytuł oryginalny</div>
                         <div class="w-50">{{{catalogueTitle}}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Numer katalogowy</div>
                         <div class="w-50">{{catalogueNumber}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Liczba elementów</div>
                         <div class="w-50">{{piecesAmount}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Seria</div>
                         <div class="w-50">{{seriesName}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Rok wydania</div>
                         <div class="w-50">{{releaseYear}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Cena oryginalna</div>
                         <div class="w-50">{{cataloguePrice}} {{currency}}</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Najniższa cena</div>
                         <div class="w-50">{{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</div>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex px-5">
                         <div class="w-50">Wiek</div>
                         <div class="w-50">{{recommendedAge}}+</div>
                     </div>
