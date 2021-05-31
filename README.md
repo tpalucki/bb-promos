@@ -21,3 +21,10 @@ Technologies used to build the webapp:
 - Java 11
     - Spring Boot 2.5
     - Mustache template engine
+    
+## Affiliate networks integrations
+
+Currently 2 biggest affiliate networks are considered:
+
+- [FireADS](https://fireads.org/pl)
+- [MyLead](https://mylead.global/pl)
