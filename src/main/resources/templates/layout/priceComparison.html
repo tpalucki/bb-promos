@@ -7,27 +7,24 @@
     {{# priceComparison}}
     <ul class="list-group shadow">
         <li class="list-group-item">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2 align-self-center">{{shopName}}</div>
-                    <div class="col-3 align-self-center">
-                        {{price}} {{currency}}
-                        {{# freeDelivery}}
-                        <span class="badge bg-success">Darmowa dostawa</span>
-                        {{/ freeDelivery}}
-                    </div>
-                    <div class="col align-self-center">
-                        {{# additionalInfo}}
-                        <div class="fw-light fst-italic fs-6">{{info}}</div>
-                        {{/ additionalInfo}}
-                    </div>
-                    <div class="col-2 align-self-center text-end">
-                        <a href="{{offerLink}}" class="btn btn-outline-success" role="button">Do sklepu</a>
-                    </div>
+            <div class="row">
+                <div class="col-2 align-self-center">{{shopName}}</div>
+                <div class="col-3 align-self-center align-items-start d-flex flex-column">
+                    <span>{{price}} {{currency}}</span>
+                    {{# freeDelivery}}
+                    <span class="badge bg-success">Darmowa dostawa</span>
+                    {{/ freeDelivery}}
+                </div>
+                <div class="col align-self-center">
+                    {{# additionalInfo}}
+                    <div class="fw-light fst-italic fs-6">{{info}}</div>
+                    {{/ additionalInfo}}
+                </div>
+                <div class="col-2 align-self-center text-end">
+                    <a href="{{offerLink}}" class="btn btn-outline-success" role="button">Do sklepu</a>
                 </div>
             </div>
         </li>
     </ul>
-
     {{/ priceComparison}}
 </div>
