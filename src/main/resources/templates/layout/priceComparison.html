@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container py-4 shadow">
     <div class="row">
         <div class="col">
             <h1 class="display-6">Porównaj ceny</h1>
         </div>
     </div>
-    {{# priceComparison}}
-    <ul class="list-group shadow">
+    <ul class="list-group">
+        {{# priceComparison}}
         <li class="list-group-item">
             <div class="row">
                 <div class="col-2 align-self-center">{{shopName}}</div>
@@ -25,6 +25,6 @@
                 </div>
             </div>
         </li>
+        {{/ priceComparison}}
     </ul>
-    {{/ priceComparison}}
 </div>
