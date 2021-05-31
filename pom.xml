@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.github.tpalucki</groupId>
-    <artifactId>bb-promo</artifactId>
+    <artifactId>bbpromo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>bb-promo</name>
-    <description>Webapp comparing promos for bulding blocks</description>
+    <name>BB-Promos Website</name>
+    <description>Webapp comparing current market promotions for bulding blocks sets</description>
     <properties>
         <java.version>11</java.version>
     </properties>
