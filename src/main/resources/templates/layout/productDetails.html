@@ -1,6 +1,6 @@
 <main class="flex-shrink-0">
     {{#productDetails}}
-    <div class="container shadow">
+    <div class="container py-4">
         <div class=row>
             <div class="col">
                 <nav aria-label="breadcrumb">
@@ -12,50 +12,45 @@
                 </nav>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="col">
-                <h1 class="display-6">{{title}}</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <a href="/images/lego-{{catalogueNumber}}.jpg">
+
+        <div class="row my-3 d-flex flex-column shadow">
+            <h1 class="display-6">{{title}}</h1>
+            <div class="d-flex">
+                <a href="/images/lego-{{catalogueNumber}}.jpg" class="w-50">
                     <img src="/images/lego-{{catalogueNumber}}.jpg" alt="{{title}}" title="{{title}}" class="img-fluid">
                 </a>
-            </div>
-            <div class="col-8">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">Tytuł oryginalny</div>
-                        <div class="col">{{{catalogueTitle}}}</div>
+                <div class="d-flex flex-column flex-grow-1">
+                    <div class="d-flex">
+                        <div class="w-50">Tytuł oryginalny</div>
+                        <div class="w-50">{{{catalogueTitle}}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Numer katalogowy</div>
-                        <div class="col">{{catalogueNumber}}</div>
+                    <div class="d-flex">
+                        <div class="w-50">Numer katalogowy</div>
+                        <div class="w-50">{{catalogueNumber}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Liczba elementów</div>
-                        <div class="col">{{piecesAmount}}</div>
+                    <div class="d-flex">
+                        <div class="w-50">Liczba elementów</div>
+                        <div class="w-50">{{piecesAmount}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Seria</div>
-                        <div class="col">{{seriesName}}</div>
+                    <div class="d-flex">
+                        <div class="w-50">Seria</div>
+                        <div class="w-50">{{seriesName}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Rok wydania</div>
-                        <div class="col">{{releaseYear}}</div>
+                    <div class="d-flex">
+                        <div class="w-50">Rok wydania</div>
+                        <div class="w-50">{{releaseYear}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Cena oryginalna</div>
-                        <div class="col">{{cataloguePrice}} {{currency}}</div>
+                    <div class="d-flex">
+                        <div class="w-50">Cena oryginalna</div>
+                        <div class="w-50">{{cataloguePrice}} {{currency}}</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Najniższa cena</div>
-                        <div class="col">{{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</div>
+                    <div class="d-flex">
+                        <div class="w-50">Najniższa cena</div>
+                        <div class="w-50">{{lowestPrice}} {{currency}} ({{lowestPriceDetails}})</div>
                     </div>
-                    <div class="row">
-                        <div class="col">Wiek</div>
-                        <div class="col">{{recommendedAge}}+</div>
+                    <div class="d-flex">
+                        <div class="w-50">Wiek</div>
+                        <div class="w-50">{{recommendedAge}}+</div>
                     </div>
                 </div>
             </div>
