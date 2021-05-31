@@ -28,3 +28,4 @@ Currently 2 biggest affiliate networks are considered:
 
 - [FireADS](https://fireads.org/pl)
 - [MyLead](https://mylead.global/pl)
+- [NetSalesMedia](https://netsalesmedia.pl/)
