@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import javax.mail.*;
@@ -17,6 +18,7 @@ import java.util.Properties;
 class GmailControllerTest {
 
     @Test
+    @Disabled("Exploratory test to check gmail inbox features offered")
     void downloaFromGmail() throws IOException {
         String userName = "tpalucki@gmail.com";
         String password = "";
