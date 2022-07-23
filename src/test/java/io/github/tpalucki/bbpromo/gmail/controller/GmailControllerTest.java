@@ -19,7 +19,7 @@ class GmailControllerTest {
 
     @Test
     @Disabled("Exploratory test to check gmail inbox features offered")
-    void downloaFromGmail() throws IOException {
+    void downloadFromGmail() throws IOException {
         String userName = "tpalucki@gmail.com";
         String password = "";
 

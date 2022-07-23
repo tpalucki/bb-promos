@@ -12,9 +12,9 @@
     <artifactId>bbpromo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>BB-Promos Website</name>
-    <description>Webapp comparing current market promotions for bulding blocks sets</description>
+    <description>Webapp comparing current market promotions for building blocks sets</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -54,8 +54,6 @@
             <version>1.6.0</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
 
     <build>
